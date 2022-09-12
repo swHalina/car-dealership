@@ -14,8 +14,6 @@ import { UpdateCarDto } from './dtos/update-car.dto';
 
 @Controller('cars')
 export class CarsController {
-  private cars = ['Toyota', 'Honda', 'Jeep'];
-
   constructor(private readonly carsService: CarsService) {}
 
   @Get()
